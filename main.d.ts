@@ -5,7 +5,7 @@ declare namespace kingTools {
    * @param {any} target
    * @return {string} ddfs
    */
-  export function getDataType(target: any): string;
+  export function getDataType(target: any): string
 
   /**
    * 冒泡排序
@@ -15,9 +15,9 @@ declare namespace kingTools {
    * @param {string} key
    * @return {string}
    */
-  export function bubblingSort(array: any[], type: string, key: string): string;
+  export function bubblingSort(array: any[], type: string, key: string): string
 }
 
-declare module "king-tools" {
-  export = kingTools;
+declare module 'king-tools' {
+  export = kingTools
 }

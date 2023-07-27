@@ -1,10 +1,12 @@
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
+/**
+ * 判断数据类型
+ * @function getDataType
+ * @param {any} target
+ * @return {string}
+ */
 function getDataType(target) {
     var type = typeof target;
-    if (type === "object") {
+    if (type === 'object') {
         return Object.prototype.toString.call(target).slice(8, -1).toLowerCase();
     }
     else {
@@ -13,7 +15,7 @@ function getDataType(target) {
 }
 // 原始类型
 function isString(target) {
-    return getDataType(target) === "string";
+    return getDataType(target) === 'string';
 }
 
 /* type enum */
@@ -22,7 +24,14 @@ var sortType;
     sortType["ASC"] = "ASC";
     sortType["DESC"] = "DESC";
 })(sortType || (sortType = {}));
-// 冒泡排序
+/**
+ * 冒泡排序
+ * @function bubblingSort
+ * @param {any[]} array
+ * @param {string} type
+ * @param {string} key
+ * @return {string}
+ */
 function bubblingSort(array, // 需要排序的数组
 type, // "ASC"(升序) or "DESC"(降序)
 key // "key" is the Object[]:key (排序对象数组需要的比较的属性key)
@@ -33,7 +42,7 @@ key // "key" is the Object[]:key (排序对象数组需要的比较的属性key)
     if (length < 2)
         return array;
     if (key && isString(key)) {
-        if (key.trim() === "")
+        if (key.trim() === '')
             return array;
         if (type === sortType.ASC) {
             for (var i = 0; i < length - 1; i++) {
@@ -79,9 +88,7 @@ key // "key" is the Object[]:key (排序对象数组需要的比较的属性key)
 
 var kingTools = {
     getDataType: getDataType,
-    bubblingSort: bubblingSort,
+    bubblingSort: bubblingSort
 };
 
-exports.bubblingSort = bubblingSort;
-exports.default = kingTools;
-exports.getDataType = getDataType;
+export { bubblingSort, kingTools as default, getDataType };

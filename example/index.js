@@ -1,4 +1,4 @@
-import kingTools from "../dist/king-tools.esm.js";
-
-let name = "king";
-console.log("name-type", kingTools.getDataType(name));
+import tools, { getDataType } from '../dist/index.js'
+console.log('king-tools:', tools)
+let name = 'king'
+console.log('name-type:', getDataType(name))

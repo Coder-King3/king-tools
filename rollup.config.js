@@ -1,23 +1,12 @@
 import resolve from "rollup-plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 export default {
-  input: "./src/index.ts", // 入口文件
+  input: "./main.ts", // 入口文件
   output: [
     {
-      format: "cjs", // 打包为commonjs格式
-      file: "dist/king-tools.cjs.js", // 打包后的文件路径名称
-      name: "ktools", // 打包后的默认导出文件名称
-    },
-    {
       format: "esm", // 打包为esm格式
-      file: "dist/king-tools.esm.js",
-      name: "ktools",
-    },
-    {
-      format: "umd", // 打包为umd通用格式
-      file: "dist/king-tools.umd.js",
-      name: "ktools",
-      minifyInternalExports: true,
+      file: "dist/index.js", // 打包后的文件路径名称
+      name: "king-tools", // 打包后的默认导出文件名称
     },
   ],
   plugins: [typescript({ tsconfig: "./tsconfig.json" }), resolve()],
