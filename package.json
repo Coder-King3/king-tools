@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Front-end tool function library",
   "type": "module",
-  "private": true,
   "main": "dist/king-tools.cjs.js",
   "module": "dist/king-tools.esm.js",
   "browser": "dist/king-tools.umd.js",
