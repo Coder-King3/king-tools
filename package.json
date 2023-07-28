@@ -6,8 +6,7 @@
   "main": "dist/index.js",
   "types": "./src/main.d.ts",
   "files": [
-    "src",
-    "dist/*.js"
+    "build/*.js"
   ],
   "scripts": {
     "dev": "nodemon example/index",
