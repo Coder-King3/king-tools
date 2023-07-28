@@ -1,5 +1,6 @@
-import resolve from 'rollup-plugin-node-resolve'
+import { nodeResolve } from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
+
 export default {
   input: './src/main.ts', // 入口文件
   output: [
@@ -9,5 +10,5 @@ export default {
       name: 'king-tools' // 打包后的默认导出文件名称
     }
   ],
-  plugins: [typescript({ tsconfig: './tsconfig.json' }), resolve()]
+  plugins: [typescript({ tsconfig: './tsconfig.json' }), nodeResolve()]
 }
