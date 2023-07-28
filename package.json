@@ -1,11 +1,11 @@
 {
   "name": "king-tools",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "Front-end tool function library",
   "type": "module",
-  "main": "dist/index.js",
+  "main": "build/index.js",
   "files": [
-    "dist/*.js"
+    "build/*.js"
   ],
   "scripts": {
     "dev": "nodemon example/index",
