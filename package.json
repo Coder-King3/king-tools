@@ -4,6 +4,7 @@
   "description": "Front-end tool function library",
   "type": "module",
   "main": "dist/index.js",
+  "types": "./src/main.d.ts",
   "files": [
     "src",
     "dist/*.js"
