@@ -4,8 +4,10 @@
   "description": "Front-end tool function library",
   "type": "module",
   "main": "build/index.js",
+  "types": "./index.d.ts",
   "files": [
-    "build/*.js"
+    "build/*.js",
+    "index.d.ts"
   ],
   "scripts": {
     "dev": "nodemon example/index",
