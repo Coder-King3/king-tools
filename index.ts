@@ -1,5 +1,5 @@
-import { getDataType } from './getDataType'
-import { bubblingSort } from './sort'
+import { getDataType } from './src/getDataType'
+import { bubblingSort } from './src/sort'
 
 const kingTools = {
   getDataType,
