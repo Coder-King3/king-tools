@@ -7,12 +7,11 @@ enum sortType {
 }
 
 /**
- * 冒泡排序
- * @function bubblingSort
+ * * 冒泡排序 *
  * @param {any[]} array
  * @param {string} type
  * @param {string} key
- * @return {string}
+ * @return {any[]}
  */
 export function bubblingSort(
   array: any[], // 需要排序的数组

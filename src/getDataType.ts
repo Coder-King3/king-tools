@@ -1,6 +1,5 @@
 /**
- * 判断数据类型
- * @function getDataType
+ * * 判断数据类型 *
  * @param {any} target
  * @return {string}
  */
