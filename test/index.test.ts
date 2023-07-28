@@ -1,4 +1,4 @@
-import { getDataType } from '../src/main'
+import { getDataType } from '../index'
 describe('判断数据类型', () => {
   it("getDataType(3) -> should return 'number'", () => {
     const type = getDataType(3)

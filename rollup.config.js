@@ -1,8 +1,9 @@
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import typescript from '@rollup/plugin-typescript'
+import terser from '@rollup/plugin-terser'
 
 export default {
-  input: './src/main.ts', // 入口文件
+  input: './index.ts', // 入口文件
   output: [
     {
       format: 'esm', // 打包为esm格式
@@ -10,5 +11,9 @@ export default {
       name: 'king-tools' // 打包后的默认导出文件名称
     }
   ],
-  plugins: [typescript({ tsconfig: './tsconfig.json' }), nodeResolve()]
+  plugins: [
+    typescript({ tsconfig: './tsconfig.json' }),
+    nodeResolve(),
+    terser()
+  ]
 }
