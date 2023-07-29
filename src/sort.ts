@@ -7,7 +7,8 @@ enum sortType {
 }
 
 /**
- * * 冒泡排序 *
+ * * 冒泡排序
+ * @name bubblingSort
  * @param {any[]} array
  * @param {string} type
  * @param {string} key
@@ -16,7 +17,7 @@ enum sortType {
 export function bubblingSort(
   array: any[], // 需要排序的数组
   type: string = sortType.ASC, // "ASC"(升序) or "DESC"(降序)
-  key: string // "key" is the Object[]:key (排序对象数组需要的比较的属性key)
+  key?: string // "key" is the Object[]:key (排序对象数组需要的比较的属性key)
 ) {
   const length = array.length
   if (length < 2) return array

@@ -1,5 +1,5 @@
 import { getDataType } from '../index'
-describe('判断数据类型', () => {
+describe('getDataType testing', () => {
   it("getDataType(3) -> should return 'number'", () => {
     const type = getDataType(3)
     expect(type).toBe('number')

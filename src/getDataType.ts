@@ -1,9 +1,10 @@
 /**
- * * 判断数据类型 *
+ * * 判断数据类型
+ * @name getDataType
  * @param {any} target
  * @return {string}
  */
-export function getDataType(target: any) {
+export default function getDataType(target: any) {
   let type = typeof target
   if (type === 'object') {
     return Object.prototype.toString.call(target).slice(8, -1).toLowerCase()
@@ -44,4 +45,7 @@ export function isBigInt(target: any) {
 // 引用类型
 export function isObject(target: any) {
   return getDataType(target) === 'object'
+}
+export function isArray(target: any) {
+  return getDataType(target) === 'array'
 }
