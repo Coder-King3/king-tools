@@ -22,4 +22,4 @@ var _ = require('king-tools')
 
 ## 为什么选择 king-tools？
 
-Lodash 让 JavaScript 变得更容易，因为它省去了处理数组的麻烦，数字、对象、字符串等。
+king-tools 让 JavaScript 变得更容易，因为它省去了处理数组的麻烦，数字、对象、字符串等。
